@@ -63,6 +63,10 @@
 # t = tuple(['red', 'green', 'blue'])
 # red, green, blue = t
 # print('r:{} g:{} b:{}'.format(red, green, blue))
+# вводим кортеж
+# x, y =input('введите через пробел').split()
+# print(x, y) #это строки
+# x, y =[int(i) for i in input('введите через пробел').split()] #списочное выражение, если надо число
 
 #словари
 # dictionary = {}
@@ -88,6 +92,22 @@
 #
 # for item in dictionary: # for (k,v) in dictionary.items():
 #  print('{}: {}'.format(item, dictionary[item]))
+
+#Сколько раз повторяется в словаре
+sp=[1, 1, 2, 2, 2, 4] #{1:2, 2:3, 4:1}
+slov={}
+for el in sp:
+    slov[el] = slov.get(el,0) +1
+    # if el not in slov:
+    #     slov[el] = 1
+    # else:
+    #     slov[el]+=1
+print(slov)
+print(slov.get(2)) #поиск значения для ключа 2
+print(slov.get(7, 0)) #если нет ключа, то вывести 0
+
+
+
 
 # множества
 # colors = {'red', 'green', 'blue'}
@@ -123,12 +143,12 @@
 # print(b) # frozenset({1, 2, 3, 5, 8})
 
 #добавить и удалить элемент из списка
-
-list = [1, 2, 3, 4, 5]
-print(list)
-print(list.pop(2)) #удалить
-print(list)
-print(list.insert(2, 11)) #добавить
-print(list)
-print(list.append(11)) #в конец
-print(list)
+#
+# list = [1, 2, 3, 4, 5]
+# print(list)
+# print(list.pop(2)) #удалить
+# print(list)
+# print(list.insert(2, 11)) #добавить
+# print(list)
+# print(list.append(11)) #в конец
+# print(list)
