@@ -26,6 +26,7 @@
 # print(list)
 #
 
+# a, b, c = [int(i) for i in input("Введите значения A,B,C: ").split()]
 # list=[i for i in range(1,21) if (i%2==0)] #то же самое
 #  созаем пару каждого из чисел => добавим кортежи
 # list=[(i, i) for i in range(1,21) if (i%2==0)]
@@ -120,7 +121,12 @@
 # print(data)
 
 #Функция enumerate()
-users = ['user1', 'user2', 'user3', 'user4', 'user5']
+# users = ['user1', 'user2', 'user3', 'user4', 'user5']
+#
+# data = list(enumerate(users))
+# print(data)
 
-data = list(enumerate(users))
-print(data)
+sp=['rrrr', 'df', 'zdsf', 'hjtdgf']
+# sp.sort(key=lambda a: -len(a))
+sp.sort(key=lambda a: len(a), reverse=True )
+print(sp)
